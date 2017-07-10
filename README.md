@@ -49,7 +49,7 @@ Example:
 
 
 
-### What are Semantic Elements?
+### semantic HTML
 **A semantic** element clearly describes its meaning to both the _browser_ and the _developer_.
 
 **Examples of non-semantic elements:** ```<div>``` and ```<span>``` - Tells nothing about its content.
@@ -64,7 +64,9 @@ Example:
  * **aria-disabled**: indicates that an element is visible, but not editable or otherwise operable
  * **aria-grabbed**: indicates the 'grabbed' state of an object in a drag-and-drop operation
 
-## The HTML tabindex attribute is used to manage keyboard focus.
+## The HTML tabindex attribute 
+is used to manage keyboard focus.
+
  keyboard user will typically move through web content using the tab key, moving from one focusable element to the next in sequential order.
  
  * Use tabindex=0 to include an element in the natural tab order of the content, but remember that an element that is focusable by **default** may be an easier option than a custom control
