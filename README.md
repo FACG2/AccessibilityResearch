@@ -58,7 +58,7 @@ Example:
 
 
  
-### adding aria attributes: 
+### adding aria attributes: [Example](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-describedby_attribute)
  * **aria-describedby**: indicates the IDs of the elements that describe the object. 
  * **aria-checked**: indicates the state of a checkbox or radio button
  * **aria-disabled**: indicates that an element is visible, but not editable or otherwise operable
@@ -153,3 +153,4 @@ Example:
  * HTML definition of [Interactive content](http://w3c.github.io/html/dom.html#interactive-content), is content that is specifically intended for user interaction.
  * HTML [tabindex](http://w3c.github.io/html/editing.html#attr-tabindex) definition.
  * ARIA – [providing keyboard focus](https://www.w3.org/WAI/PF/aria-practices/#kbd_focus).
+ * Aria-describedby attribute [MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-describedby_attribute)
