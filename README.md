@@ -71,7 +71,7 @@ Example:
  
  * Use tabindex=-1 to give an element programmatic focus, but exclude it from the tab order of the content
   Example:
- ```
+```html
 <div role="group" id="errorSummary" aria-labelledby="errorSummaryHeading" tabindex="-1">
 <h2 id="errorSummaryHeading">Your information contains three errors</h2>
 <ul>
@@ -82,7 +82,7 @@ Example:
 
  * Avoid using tabindex=1+.
  Example: 
-```
+```html
  <label for="username">Username:</label>
 <input type="text" id="username" tabindex="3">
 
