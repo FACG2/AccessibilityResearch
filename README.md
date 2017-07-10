@@ -1,5 +1,10 @@
 # Accessibility Research
 
+### How to write an accessible navbar?
+
+### How to write an accessible modal?
+
+
 ### What are Semantic Elements?
 **A semantic** element clearly describes its meaning to both the _browser_ and the _developer_.
 
