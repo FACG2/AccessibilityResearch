@@ -1,6 +1,14 @@
 # Accessibility Research
 
 ### How to write an accessible navbar?
+True or False?
+Accessibility is only relevant to projects designed for the blind.
+False! So false. This is actually one of the most common misconceptions that I’ve come across with new web developers. Accessibility means ensuring that all users are able to experience your product in a way that works for them.
+The main navigation bar on a website is one of the most important areas that needs to be accessible. If users can’t navigate your site, guess what – they are not going to use it! In order to cater to your users, you have to know who your users are. Our users at Ancestry.com vary greatly by age and technical skill. After digesting our user stats, we focused in on four key areas of accessibility:
+* Keyboard accessible navigation – Keyboard accessible navigation is crazy helpful for people with dexterity issues. Moving and clicking a mouse on a tiny 16×16 pixel icon can prove to be very difficult. This also helps our power users that want to improve their workflow by navigating with access keys.
+* Touch device capable – More and more of our users visit the site through touch enabled devices, including phones, tablets, and even desktop computers. Unbeknownst to many developers though, if you have dropdown menus that are triggered by hovering over an anchor element, many users will never be able to access those secondary menu items.
+* Mobile users with smaller screens – Given that most mobile devices are touch-enabled, this is still a different group of people due to the screen resolution. A surprising amount of our users (growing daily) are now navigating on devices with screens smaller than 768 pixels wide.
+* Assistive technology friendly – Users with sight disabilities rely on screen readers and other assistive technologies. We strive to keep this in mind when building pages, but honestly, our current support of assistive technologies is quite low. We’d love to improve this effort, starting with this new header.
 
 ### How to write an accessible modal?
 
@@ -19,7 +27,8 @@ The HTML tabindex attribute is used to manage keyboard focus.
  * Use tabindex=-1 to give an element programmatic focus, but exclude it from the tab order of the content
  * Avoid using tabindex=1+.
  
- * aria-describedby: attribute is used to indicate the IDs of the elements that describe the object. 
+adding aria attributes: 
+ * aria-describedby: indicates the IDs of the elements that describe the object. 
  * aria-checked: indicates the state of a checkbox or radio button
  * aria-disabled: indicates that an element is visible, but not editable or otherwise operable
  * aria-grabbed: indicates the 'grabbed' state of an object in a drag-and-drop operation
@@ -97,6 +106,10 @@ The HTML tabindex attribute is used to manage keyboard focus.
   </script>
 </body>
 ```
+ 
+ 
+ 
+ 
  
  
  Further reading:
