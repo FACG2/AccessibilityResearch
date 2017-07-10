@@ -15,7 +15,15 @@
 The HTML tabindex attribute is used to manage keyboard focus.
  keyboard user will typically move through web content using the tab key, moving from one focusable element to the next in sequential order.
  
- The aria-describedby attribute is used to indicate the IDs of the elements that describe the object. 
+*Use tabindex=0 to include an element in the natural tab order of the content, but remember that an element that is focusable by default may be an easier option than a custom control
+*Use tabindex=-1 to give an element programmatic focus, but exclude it from the tab order of the content
+*Avoid using tabindex=1+.
+ 
+*aria-describedby: attribute is used to indicate the IDs of the elements that describe the object. 
+*aria-checked: indicates the state of a checkbox or radio button
+*aria-disabled: indicates that an element is visible, but not editable or otherwise operable
+*aria-grabbed: indicates the 'grabbed' state of an object in a drag-and-drop operation
+
  
  Example: 
 ```html
