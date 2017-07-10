@@ -10,7 +10,43 @@ The main navigation bar on a website is one of the most important areas that nee
 * Mobile users with smaller screens – Given that most mobile devices are touch-enabled, this is still a different group of people due to the screen resolution. A surprising amount of our users (growing daily) are now navigating on devices with screens smaller than 768 pixels wide.
 * Assistive technology friendly – Users with sight disabilities rely on screen readers and other assistive technologies. We strive to keep this in mind when building pages, but honestly, our current support of assistive technologies is quite low. We’d love to improve this effort, starting with this new header.
 
+Example:
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Accessibile Navbar</title>
+</head>
+
+<body>
+
+<nav class="nav" id="nav">
+<a accesskey="2" href="/tree/boyer/">Boyer Family Tree</a>
+<ul class="navSubMenu" id="navTrees">
+<li><a href="/tree/boyer/">Boyer Family Tree</a></li>
+<li><a href="/tree/nielson/">Nielson REAL Family Tree</a></li>
+<li><a href="/tree/start/">Start a tree</a></li>
+</ul>
+<a accesskey="3" href="/search/" id="navSearchTrigger">Search</a>
+<ul class="navSubMenu" id="navSearch">
+<li><a href="/search/">Search All Records</a></li>
+<li><a href="/search/census/">Census & Voter Lists</a></li>
+<li><a href="/search/birth/">Birth, Marriage & Death</a></li>
+</ul>
+</nav>
+
+</body>
+
+</html>
+```
+
 ### How to write an accessible modal?
+
+
 
 
 ### What are Semantic Elements?
@@ -20,12 +56,7 @@ The main navigation bar on a website is one of the most important areas that nee
 
 **Examples of semantic elements:** ```<form>, <table>```, and ```<article> ```- Clearly defines its content.
 
-The HTML tabindex attribute is used to manage keyboard focus.
- keyboard user will typically move through web content using the tab key, moving from one focusable element to the next in sequential order.
- 
- * Use tabindex=0 to include an element in the natural tab order of the content, but remember that an element that is focusable by default may be an easier option than a custom control
- * Use tabindex=-1 to give an element programmatic focus, but exclude it from the tab order of the content
- * Avoid using tabindex=1+.
+
  
 adding aria attributes: 
  * aria-describedby: indicates the IDs of the elements that describe the object. 
@@ -33,8 +64,14 @@ adding aria attributes:
  * aria-disabled: indicates that an element is visible, but not editable or otherwise operable
  * aria-grabbed: indicates the 'grabbed' state of an object in a drag-and-drop operation
 
+## The HTML tabindex attribute is used to manage keyboard focus.
+ keyboard user will typically move through web content using the tab key, moving from one focusable element to the next in sequential order.
  
- Example: 
+ * Use tabindex=0 to include an element in the natural tab order of the content, but remember that an element that is focusable by default may be an easier option than a custom control
+ * Use tabindex=-1 to give an element programmatic focus, but exclude it from the tab order of the content
+ * Avoid using tabindex=1+.
+ 
+Example: 
 ```html
 <!DOCTYPE html>
 <html lang="en">
