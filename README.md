@@ -57,16 +57,15 @@ Example:
 **Examples of semantic elements:** ```<form>, <table>```, and ```<article> ```- Clearly defines its content.
 
 
- 
 ### adding aria attributes: [Example](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-describedby_attribute)
  * **aria-describedby**: indicates the IDs of the elements that describe the object. 
  * **aria-checked**: indicates the state of a checkbox or radio button
  * **aria-disabled**: indicates that an element is visible, but not editable or otherwise operable
  * **aria-grabbed**: indicates the 'grabbed' state of an object in a drag-and-drop operation
 
-## The HTML tabindex attribute 
-is used to manage keyboard focus.
 
+## Managing focus
+The HTML tabindex attribute is used to manage keyboard focus.
  keyboard user will typically move through web content using the tab key, moving from one focusable element to the next in sequential order.
  
  * Use tabindex=0 to include an element in the natural tab order of the content, but remember that an element that is focusable by **default** may be an easier option than a custom control
