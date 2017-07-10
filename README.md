@@ -13,7 +13,8 @@ The HTML tabindex attribute is used to manage keyboard focus.
  The aria-describedby attribute is used to indicate the IDs of the elements that describe the object. 
  
  Example: 
-`<addr>` <!DOCTYPE html>
+```html
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -82,7 +83,7 @@ The HTML tabindex attribute is used to manage keyboard focus.
   <script type="text/javascript" src="./script.js">
   </script>
 </body>
-
+```
  
  
  Further reading:
