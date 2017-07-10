@@ -3,9 +3,9 @@
 ### What are Semantic Elements?
 **A semantic** element clearly describes its meaning to both the _browser_ and the _developer_.
 
-**Examples of non-semantic elements:** <div> and <span> - Tells nothing about its content.
+**Examples of non-semantic elements:** ```<div>``` and ```<span>``` - Tells nothing about its content.
 
-**Examples of semantic elements:** <form>, <table>, and <article> - Clearly defines its content.
+**Examples of semantic elements:** ```<form>, <table>```, and ```<article> ```- Clearly defines its content.
 
 The HTML tabindex attribute is used to manage keyboard focus.
  keyboard user will typically move through web content using the tab key, moving from one focusable element to the next in sequential order.
