@@ -67,9 +67,31 @@ Example:
 ## The HTML tabindex attribute is used to manage keyboard focus.
  keyboard user will typically move through web content using the tab key, moving from one focusable element to the next in sequential order.
  
- * Use tabindex=0 to include an element in the natural tab order of the content, but remember that an element that is focusable by default may be an easier option than a custom control
+ * Use tabindex=0 to include an element in the natural tab order of the content, but remember that an element that is focusable by **default** may be an easier option than a custom control
+ 
  * Use tabindex=-1 to give an element programmatic focus, but exclude it from the tab order of the content
+  Example:
+ ```
+<div role="group" id="errorSummary" aria-labelledby="errorSummaryHeading" tabindex="-1">
+<h2 id="errorSummaryHeading">Your information contains three errors</h2>
+<ul>
+...
+</ul>
+</div>
+```
+
  * Avoid using tabindex=1+.
+ Example: 
+```
+ <label for="username">Username:</label>
+<input type="text" id="username" tabindex="3">
+
+<label for="password">Password:</label>
+<input type="password" id="password" tabindex="1">
+
+<input type="submit" value="Log in" tabindex="2">
+ ```
+ 
  
 Example: 
 ```html
